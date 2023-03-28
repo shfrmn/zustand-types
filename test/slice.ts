@@ -1,5 +1,5 @@
 import {create, UseBoundStore, StoreApi} from "zustand"
-import {StoreArgs} from "../src"
+import {SetState, StoreArgs} from "../src"
 
 function Store1(...args: StoreArgs<typeof Store1>) {
   const [set] = args
@@ -9,8 +9,7 @@ function Store1(...args: StoreArgs<typeof Store1>) {
   }
 }
 
-function Store2(...args: StoreArgs<typeof Store2>) {
-  const [set] = args
+function Store2(set: SetState<typeof Store2>, ...args: any[]) {
   return {
     y: 1,
     setY: (y: number) => set({y}),

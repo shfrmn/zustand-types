@@ -1,13 +1,23 @@
 {
-  "name": "zustand-ts",
+  "name": "zustand-types",
   "version": "0.1.0",
-  "description": "",
+  "description": "Infer zustand store type",
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc",
     "test": "tsc -p ./test"
   },
-  "keywords": [],
+  "keywords": [
+    "zustand",
+    "type",
+    "types",
+    "typescript",
+    "infer",
+    "react",
+    "state",
+    "redux",
+    "store"
+  ],
   "author": "Joseph Shaferman <joseph.shaferman@gmail.com>",
   "license": "MIT",
   "devDependencies": {
